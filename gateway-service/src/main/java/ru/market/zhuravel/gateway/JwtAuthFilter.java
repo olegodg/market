@@ -64,7 +64,7 @@ public class JwtAuthFilter  extends AbstractGatewayFilterFactory<JwtAuthFilter.C
     }
 
     private void populateRequestWithHeaders(ServerWebExchange exchange, String token) {
-        Claims claims = jwtUtil.getAllClaimsFromToken(token);
+        Claims claims = jwtUtil.getAllClaimsFromToken(token);//
         exchange.getRequest().mutate()
                 .header("username", claims.getSubject())
                 .build();
