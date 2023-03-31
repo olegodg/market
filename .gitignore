@@ -1,0 +1,7 @@
+/api/target/
+/auth-service/target/
+/cart-service/target/
+/core-service/target/
+/front-service/target/
+/gateway-service/target/
+/.idea/
